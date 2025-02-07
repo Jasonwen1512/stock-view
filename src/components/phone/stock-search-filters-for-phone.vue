@@ -535,7 +535,9 @@ let targetStockData = reactive(createStockDataT());
 
 const getStockData = async () => {
   try {
-    const response = await fetch("http://localhost:3000/api/stockData");
+    const response = await fetch(
+      "https://stock-view-wf7f.onrender.com/api/stockData"
+    );
     stockData = await response.json();
     // console.log(stockData);
   } catch (error) {
@@ -570,7 +572,7 @@ let search = () => {
 let fetchStock = async (stockCode) => {
   try {
     const response = await fetch(
-      `http://localhost:3000/api/TWstock/${stockCode}`
+      `https://stock-view-wf7f.onrender.com/api/TWstock/${stockCode}`
     );
     const stockData = await response.json();
     const data = await stockData.data;

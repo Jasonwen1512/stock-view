@@ -309,7 +309,7 @@ const fetchStockForO = async () => {
   try {
     const responses = await Promise.all(
       tickers.map((tickers) =>
-        fetch(`http://localhost:3000/api/Ostock/${tickers}`)
+        fetch(`https://stock-view-wf7f.onrender.com/api/Ostock/${tickers}`)
       )
     );
     const stockData = await Promise.all(
@@ -382,7 +382,9 @@ const fetchStockForO = async () => {
 // };
 const fetchStockForTW = async () => {
   try {
-    const response = await fetch("http://localhost:3000/api/TWstock");
+    const response = await fetch(
+      "https://stock-view-wf7f.onrender.com/api/TWstock"
+    );
     const stockData = await response.json();
     const data = stockData.data;
     setStockDataT(TWII, data[0]);
