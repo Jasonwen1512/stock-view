@@ -747,9 +747,6 @@ onMounted(() => {
 .otherInfo {
   font-size: 1.2rem;
 }
-.time {
-  font-size: 1.3rem;
-}
 .fiveTick > table {
   margin: 0;
 }

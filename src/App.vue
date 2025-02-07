@@ -167,6 +167,7 @@ watch(
   }
   .time {
     margin: 20px 10px 20px 10px !important;
+    font-size: 1.3rem;
   }
   .time div {
     align-self: center;
