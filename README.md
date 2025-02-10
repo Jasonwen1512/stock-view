@@ -8,7 +8,7 @@ https://jasonwen1512.github.io/stock-view/
 
 ## 🛠️使用技術
 - **前端：** Vue.js
-- **後端：** Node.js（Express.js）
+- **後端：** Node.js（Express）
 - **數據來源：**
   - 台灣證券交易所 API
   - Yahoo Finance API
